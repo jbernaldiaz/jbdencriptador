@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <script src="logica.js"></script>
+    
     <title>Decodificador Desfio Alura</title>
 </head>
     <body>
@@ -20,16 +20,17 @@
                     <h6 class="informacion"><img src="images/Vector.png"> Sólo letras minusculas y sin acentos.</h6>
                 </div>
                 <div class="botones">
-                    <button class="btn-encriptar" onclick="btnClick()">Encriptar</button>
-                    <button class="btn-desencriptar">Desencriptar</button>
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </section>
             <section>
                 <textarea class="mensaje"  cols="20" rows="10"></textarea>
                 <div>
-                    <button class="copiar">Copiar</button>
+                    <button class="copiar" onclick="btnCopiar()">Copiar</button>
                 </div>
             </section>
         </main>
     </body>
+    <script src="logica.js"></script>
 </html>
